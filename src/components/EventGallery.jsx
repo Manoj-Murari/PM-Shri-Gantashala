@@ -95,9 +95,9 @@ const eventGroups = [
     emoji: '🤝',
     cover: "/assets/optimized/Interaction with Ghantasala SI Chandana madam/IMG-20260704-WA0021.webp",
     photos: [
+      { src: "/assets/optimized/Interaction with Ghantasala SI Chandana madam/IMG-20260704-WA0019.webp", caption: "Welcome Bouquet Presentation" },
       { src: "/assets/optimized/Interaction with Ghantasala SI Chandana madam/IMG-20260704-WA0020.webp", caption: "Guest Interaction" },
       { src: "/assets/optimized/Interaction with Ghantasala SI Chandana madam/IMG-20260704-WA0021.webp", caption: "SI Chandana Interaction" },
-      { src: "/assets/optimized/Interaction with Ghantasala SI Chandana madam/IMG-20260704-WA0022.webp", caption: "Felicitation Ceremony" },
     ],
   },
   {
@@ -107,10 +107,10 @@ const eventGroups = [
     emoji: '🌟',
     cover: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0016.webp",
     photos: [
+      { src: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0015.webp", caption: "Teacher Welcome Presentation" },
       { src: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0016.webp", caption: "Welcome Ceremony" },
       { src: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0017.webp", caption: "New Students Welcome" },
       { src: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0018.webp", caption: "Academic Year Opening" },
-      { src: "/assets/optimized/Welcoming newly joined to new academic year 2026-27/IMG-20260704-WA0019.webp", caption: "Welcome Gathering" },
     ],
   },
   {
@@ -160,9 +160,10 @@ const eventGroups = [
     title: 'Xth Pass-Out Batch',
     category: 'Events',
     emoji: '🎓',
-    cover: "/assets/optimized/xth_passout_batch.jpg",
+    cover: "/assets/optimized/xth_passout_batch_cover.jpg",
     photos: [
-      { src: "/assets/optimized/xth_passout_batch.jpg", caption: "Class X Pass-Out Batch with Teachers – MGZPHS Ghantasala" },
+      { src: "/assets/optimized/xth_passout_batch_cover.jpg", caption: "Class X Pass-Out Batch – Group Portrait 2" },
+      { src: "/assets/optimized/xth_passout_batch.jpg",       caption: "Class X Pass-Out Batch with Teachers – MGZPHS Ghantasala" },
     ],
   },
 ];
