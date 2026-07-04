@@ -25,13 +25,22 @@ const HMProfile = () => {
           className="card max-w-3xl mx-auto mb-10 overflow-hidden"
         >
           <div className="flex flex-col md:flex-row items-center md:items-stretch bg-white">
-            {/* Image Section - Refined smaller portrait frame */}
-            <div className="w-full max-w-[260px] md:w-[240px] shrink-0 relative bg-slate-50 aspect-[3/4] m-6 md:my-6 md:ml-6 md:mr-0 rounded-xl overflow-hidden shadow-sm border border-slate-100">
-              <img 
-                src="/assets/optimized/hm_profile.webp" 
-                alt={schoolData.headmistress.name} 
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
+            {/* Image Section – formal portrait frame */}
+            <div className="shrink-0 flex items-center justify-center p-6 md:pl-6 md:pr-8 md:py-8">
+              <div style={{
+                width: '180px', height: '220px',
+                borderRadius: '1rem',
+                overflow: 'hidden',
+                border: '3px solid #fbbf24',
+                boxShadow: '0 8px 32px rgba(251,191,36,0.2), 0 2px 8px rgba(0,0,0,0.12)',
+                flexShrink: 0,
+              }}>
+                <img
+                  src="/assets/optimized/hm_profile_new.png"
+                  alt={schoolData.headmistress.name}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
+                />
+              </div>
             </div>
 
             {/* Profile Info Section */}

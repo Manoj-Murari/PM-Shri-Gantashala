@@ -85,3 +85,124 @@
     animation: marquee 30s linear infinite !important;
   }
 }
+
+/* ── Dignitary Section ───────────────────────────── */
+.dignitary-section {
+  background: linear-gradient(160deg, #f8fafc 0%, #eef2ff 100%);
+  padding: 4rem 1.25rem;
+}
+@media (min-width: 640px) { .dignitary-section { padding: 5rem 1.5rem; } }
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.section-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
+}
+.section-rule {
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(to right, #1e3a8a, #fbbf24);
+  border-radius: 2px;
+  margin: 0.75rem auto 0;
+  transform-origin: left;
+}
+
+/* 2 cols on mobile → 3 on md → 5 on xl */
+.dignitary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+@media (min-width: 640px)  { .dignitary-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .dignitary-grid { grid-template-columns: repeat(5, 1fr); } }
+
+.dignitary-card {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 16px rgba(15,23,42,0.07);
+  border: 1px solid rgba(203,213,225,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dignitary-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(15,23,42,0.12);
+}
+
+.dignitary-photo-wrap {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+}
+@media (min-width: 640px) {
+  .dignitary-photo-wrap { width: 110px; height: 110px; }
+}
+
+.dignitary-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Fallback avatar when no photo */
+.dignitary-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+/* Gold ring */
+.dignitary-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2.5px solid #fbbf24;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.dignitary-info {
+  text-align: center;
+}
+.dignitary-role {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fbbf24;
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+.dignitary-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+}
+@media (min-width: 640px) {
+  .dignitary-name { font-size: 0.875rem; }
+}

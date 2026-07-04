@@ -12,6 +12,22 @@ export const schoolData = {
     description: "Honored with PM SHRI School status in June 2022, MGZPHS PLUS stands as a centre of excellence nurturing students in academics, sports, and extracurricular activities.",
   },
 
+  midDayMeal: {
+    schemeName: "Sreemathi Dokka Seethamma Madyahna Bhojanam Padakam",
+    teluguName: "శ్రీమతి డొక్కా సీతమ్మ మధ్యాహ్న భోజన పధకం",
+    authority: "Andhra Pradesh Government",
+    posterImage: "/assets/optimized/midday_meal_scheme.jpg",
+    description: "A flagship welfare scheme by the Government of Andhra Pradesh providing nutritious mid-day meals to students every school day, ensuring no child studies on an empty stomach.",
+    weeklyMenu: [
+      { day: "సోమవారం", dayEn: "Monday",    menu: "అన్నం, ఆకుకూరతో పప్పు, గుడ్డు ఫ్రై, చిక్కీ" },
+      { day: "మంగళవారం", dayEn: "Tuesday",  menu: "పులిహొర, చట్నీ, ఉడికించిన గుడ్డు, రాగిజావ" },
+      { day: "బుధవారం", dayEn: "Wednesday", menu: "అన్నం, కూరగాయల కూర, గుడ్డు ఫ్రై, చిక్కీ" },
+      { day: "గురువారం", dayEn: "Thursday", menu: "వెజ్‌రైస్, పులావ్, బంగాళాదుంప కుర్మా, ఉడికించిన గుడ్డు, రాగిజావ" },
+      { day: "శుక్రవారం", dayEn: "Friday",  menu: "అన్నం, ఆకుకూరతో పప్పు, గుడ్డు ఫ్రై, చిక్కీ" },
+      { day: "శనివారం", dayEn: "Saturday",  menu: "అన్నం, కూరగాయల కూర, స్వీట్ పొంగల్, రాగిజావ" },
+    ],
+  },
+
   headmistress: {
     name: "M. Sri Rangavalli",
     qualifications: "M.Sc., M.Ed., M.L.I.Sc.",
@@ -66,6 +82,39 @@ export const schoolData = {
       description: "With PM SHRI grants, a spacious playground and kitchen garden have been developed to encourage physical fitness and environmental awareness.",
       icon: "Leaf",
     }
+  ],
+
+  dignitaries: [
+    {
+      id: "cm",
+      role: "Chief Minister, Andhra Pradesh",
+      name: "Sri N. Chandrababu Naidu",
+      image: "/assets/optimized/cm.png",
+    },
+    {
+      id: "deputy-cm",
+      role: "Deputy Chief Minister",
+      name: "Sri Pawan Kalyan",
+      image: "/assets/optimized/deputy_cm.png",
+    },
+    {
+      id: "edu-minister",
+      role: "Minister of Education",
+      name: "Sri Nara Lokesh",
+      image: "/assets/optimized/edu_minister.png",
+    },
+    {
+      id: "deo",
+      role: "District Education Officer (DEO)",
+      name: "Shri U V Subbarao",
+      image: "/assets/optimized/deo.png",
+    },
+    {
+      id: "collector",
+      role: "Collector, Krishna District",
+      name: "Shri D K Balaji I.A.S",
+      image: "/assets/optimized/collector.png",
+    },
   ],
 
   events: [

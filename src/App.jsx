@@ -5,8 +5,9 @@ import { ExternalLink, ChevronUp, Menu, X } from 'lucide-react';
 import AboutSchool from './components/AboutSchool';
 import HMProfile from './components/HMProfile';
 import FacilitiesGrid from './components/FacilitiesGrid';
-import EventGallery from './components/EventGallery';
 import Achievements from './components/Achievements';
+import MidDayMealSection from './components/MidDayMealSection';
+import EventGallery from './components/EventGallery';
 import ContactSection from './components/ContactSection';
 import './index.css';
 
@@ -25,6 +26,7 @@ const navLinks = [
   { href: '#leadership', label: 'Leadership' },
   { href: '#infrastructure', label: 'Infrastructure' },
   { href: '#results', label: 'Results' },
+  { href: '#midday-meal', label: 'Mid-Day Meal' },
   { href: '#gallery', label: 'Gallery' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -229,6 +231,7 @@ function App() {
         <HMProfile />
         <FacilitiesGrid />
         <Achievements />
+        <MidDayMealSection />
         <EventGallery />
         <ContactSection />
       </main>
@@ -236,6 +239,34 @@ function App() {
       {/* ════════════ FOOTER ════════════ */}
       <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
         <div className="container-custom">
+      {/* ── Dignitary Strip ── */}
+        <div style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1.5rem', marginBottom: '1.75rem' }}>
+          <p style={{ fontSize: '0.58rem', fontWeight: 800, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#fbbf24', textAlign: 'center', marginBottom: '1rem' }}>
+            Our Honourable Leaders
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1.25rem' }}>
+            {schoolData.dignitaries.map(d => (
+              <div key={d.id} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.45rem', width: '72px' }}>
+                <div style={{ position: 'relative', width: '56px', height: '56px', flexShrink: 0 }}>
+                  {d.image ? (
+                    <img src={d.image} alt={d.name}
+                      style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center' }} />
+                  ) : (
+                    <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'linear-gradient(135deg,#1e3a8a,#3b82f6)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 800, fontSize: '0.9rem' }}>
+                      {d.name.replace(/^(Sri|Shri|Dr\.?)\s+/i,'').split(' ').slice(0,2).map(w=>w[0]).join('')}
+                    </div>
+                  )}
+                  <div style={{ position: 'absolute', inset: '-3px', borderRadius: '50%', border: '1.5px solid #fbbf24', opacity: 0.7, pointerEvents: 'none' }} />
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <p style={{ color: '#fbbf24', fontSize: '0.5rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.3, marginBottom: '2px' }}>{d.role}</p>
+                  <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.6rem', fontWeight: 600, lineHeight: 1.3 }}>{d.name}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
