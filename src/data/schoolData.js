@@ -14,7 +14,7 @@ export const schoolData = {
   headmistress: {
     name: "M. Sri Rangavalli",
     qualifications: "M.Sc., M.Ed., M.L.I.Sc.",
-    message: "At Mahatma Gandhi Zilla Parishad High School, Ghantasala, we strongly believe that education plays a key role in shaping and transforming one's future. Our school is committed to supporting every student, nurturing their potential, and encouraging them to dream, learn, and grow. We take special pride in providing accessible secondary education for girl students, ensuring that every girl child has the opportunity to continue her studies in a safe and supportive environment. Our focus is on the holistic development of students academically, socially, emotionally, and morally so that they become confident, responsible, and empowered individuals ready to contribute to society.",
+    message: "At Mahatma Gandhi Zilla Parishad High School PLUS, Ghantasala, we strongly believe that education plays a key role in shaping and transforming one's future. Our school is committed to supporting every student, nurturing their potential, and encouraging them to dream, learn, and grow. We take special pride in providing accessible secondary education for girl students, ensuring that every girl child has the opportunity to continue her studies in a safe and supportive environment. Our focus is on the holistic development of students academically, socially, emotionally, and morally so that they become confident, responsible, and empowered individuals ready to contribute to society.",
   },
 
   stats: [

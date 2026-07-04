@@ -13,29 +13,63 @@ const HMProfile = () => {
           </span>
           <h2 className="section-title">Administrative Excellence</h2>
           <p className="section-desc">
-            Highlighting the contributions of {schoolData.headmistress.name}, leading MGZPHS Ghantasala to academic and social recognition.
+            Highlighting the contributions of {schoolData.headmistress.name}, leading MGZPHS PLUS Ghantasala to academic and social recognition.
           </p>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="card max-w-2xl mx-auto mb-10">
-          <div className="bg-gradient-to-b from-school-light to-white p-8 flex flex-col items-center">
-            <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-[5px] border-school-gold/70 overflow-hidden shadow-lg bg-slate-100 mb-5">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          transition={{ duration: 0.6 }} 
+          className="card max-w-3xl mx-auto mb-10 overflow-hidden"
+        >
+          <div className="flex flex-col md:flex-row items-center md:items-stretch bg-white">
+            {/* Image Section - Refined smaller portrait frame */}
+            <div className="w-full max-w-[260px] md:w-[240px] shrink-0 relative bg-slate-50 aspect-[3/4] m-6 md:my-6 md:ml-6 md:mr-0 rounded-xl overflow-hidden shadow-sm border border-slate-100">
               <img 
                 src="/assets/optimized/hm_profile.webp" 
                 alt={schoolData.headmistress.name} 
-                className="w-full h-full object-cover object-[center_35%]"
+                className="absolute inset-0 w-full h-full object-cover object-center"
               />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-school-navy font-heading text-center">{schoolData.headmistress.name}</h3>
-            <p className="text-school-amber font-bold text-xs uppercase tracking-[0.15em] mt-1.5">Headmistress / Principal</p>
-            <p className="text-slate-400 text-xs mt-1">{schoolData.headmistress.qualifications}</p>
-          </div>
 
-          <div className="p-6 md:p-8 border-t border-slate-100">
-            <div className="border-l-[3px] border-school-gold pl-5">
-              <p className="text-slate-600 italic text-sm leading-relaxed">
-                "{schoolData.headmistress.message}"
-              </p>
+            {/* Profile Info Section */}
+            <div className="flex-grow p-6 md:p-8 lg:p-10 flex flex-col justify-between bg-white">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[10px] font-extrabold bg-school-amber/10 text-school-amber uppercase tracking-wider mb-3">
+                    Headmistress Message
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-black text-school-navy font-heading">
+                    {schoolData.headmistress.name}
+                  </h3>
+                  <p className="text-school-blue font-bold text-xs uppercase tracking-wider mt-1.5">
+                    Headmistress / Principal
+                  </p>
+                  <p className="text-slate-400 text-xs mt-1">
+                    {schoolData.headmistress.qualifications}
+                  </p>
+                </div>
+
+                <div className="relative pl-6 border-l-[3px] border-school-gold">
+                  <span className="absolute -left-2 -top-5 text-6xl text-school-gold/20 font-serif leading-none">“</span>
+                  <p className="text-slate-600 italic text-sm md:text-[15px] leading-relaxed relative z-10">
+                    {schoolData.headmistress.message}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between text-xs">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span className="font-semibold text-slate-500">Leading Administrative Excellence</span>
+                </div>
+                <span className="font-bold text-school-gold uppercase tracking-wider">Est. 1946</span>
+              </div>
             </div>
           </div>
         </motion.div>

@@ -51,9 +51,9 @@ function App() {
       <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100" style={{ backdropFilter: 'blur(12px)' }}>
         <div className="container-custom py-3 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5" style={{ minHeight: 'auto' }}>
-            <img src="/assets/optimized/logo.png" alt="PM SHRI MGZPHS Logo" className="w-10 h-10 object-contain shrink-0" />
+            <img src="/assets/optimized/logo.png" alt="PM SHRI MGZPHS PLUS Logo" className="w-10 h-10 object-contain shrink-0" />
             <div>
-              <p className="text-sm font-bold text-school-navy leading-tight tracking-tight">MGZPHS GHANTASALA</p>
+              <p className="text-sm font-bold text-school-navy leading-tight tracking-tight">MGZPHS PLUS GHANTASALA</p>
               <p className="text-yellow-500 font-semibold tracking-wider uppercase" style={{ fontSize: '10px' }}>DISE: {schoolData.diseCode}</p>
             </div>
           </a>
@@ -111,7 +111,7 @@ function App() {
 
           {/* BG image */}
           <div className="absolute inset-0">
-            <img src="/assets/hero_bg.png" alt="MGZPHS Ghantasala School Campus" className="w-full h-full object-cover object-center" style={{ filter: 'brightness(0.45)' }} />
+            <img src="/assets/hero_bg.png" alt="MGZPHS PLUS Ghantasala School Campus" className="w-full h-full object-cover object-center" style={{ filter: 'brightness(0.45)' }} />
           </div>
 
           {/* Gradient overlay — lighter at top so building texture shows, denser left for text legibility */}
@@ -194,7 +194,7 @@ function App() {
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', background: 'rgba(251,191,36,0.15)', filter: 'blur(40px)', transform: 'scale(1.3)' }} />
                   <div style={{ position: 'relative', width: '260px', height: '260px', borderRadius: '50%', border: '2px solid rgba(251,191,36,0.4)', background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(16px)', padding: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src="/assets/optimized/logo.png" alt="MGZPHS Ghantasala PM SHRI" className="w-full h-full object-contain" style={{ filter: 'drop-shadow(0 0 24px rgba(251,191,36,0.4))' }} />
+                    <img src="/assets/optimized/logo.png" alt="MGZPHS PLUS Ghantasala PM SHRI" className="w-full h-full object-contain" style={{ filter: 'drop-shadow(0 0 24px rgba(251,191,36,0.4))' }} />
                   </div>
                 </div>
                 {/* Info card */}
@@ -239,8 +239,8 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <img src="/assets/optimized/logo.png" alt="MGZPHS Ghantasala Footer Logo" className="w-8 h-8" />
-                <span className="text-white font-bold text-sm">MGZPHS Ghantasala</span>
+                <img src="/assets/optimized/logo.png" alt="MGZPHS PLUS Ghantasala Footer Logo" className="w-8 h-8" />
+                <span className="text-white font-bold text-sm">MGZPHS PLUS Ghantasala</span>
               </div>
               <p className="text-xs leading-relaxed">A PM SHRI Model School serving the community since {schoolData.established}.</p>
             </div>

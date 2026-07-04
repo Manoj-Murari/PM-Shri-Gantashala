@@ -11,7 +11,7 @@ const AboutSchool = () => {
           <span className="section-badge bg-school-blue/10 text-school-blue">
             <School size={14} /> Institution Overview
           </span>
-          <h2 className="section-title">Introduction to MGZPHS Ghantasala</h2>
+          <h2 className="section-title">Introduction to MGZPHS PLUS Ghantasala</h2>
           <p className="section-desc">
             A center of learning established to serve Ghantasala and neighboring rural communities, now transformed into a state-of-the-art PM SHRI model school.
           </p>
@@ -35,7 +35,7 @@ const AboutSchool = () => {
           <div className="rounded-2xl overflow-hidden shadow-md border border-slate-100">
             <img 
               src="/assets/optimized/school_entrance.webp" 
-              alt="MGZPHS School Entrance Gate" 
+              alt="MGZPHS PLUS School Entrance Gate" 
               className="w-full h-48 md:h-72 object-cover"
               loading="lazy"
             />
