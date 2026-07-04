@@ -1,0 +1,104 @@
+export const schoolData = {
+  name: "Mahatma Gandhi Zilla Parishad High School PLUS",
+  location: "Ghantasala, Krishna District, Andhra Pradesh",
+  established: 1946,
+  pmShriStatus: "June 2022",
+  diseCode: "28163101013",
+  
+  hero: {
+    title: "Empowering Rural Education",
+    subtitle: "A Beacon of Excellence Since 1946",
+    description: "Honored with PM SHRI School status in June 2022, MGZPHS PLUS stands as a centre of excellence nurturing students in academics, sports, and extracurricular activities.",
+  },
+
+  headmistress: {
+    name: "M. Sri Rangavalli",
+    qualifications: "M.Sc., M.Ed., M.L.I.Sc.",
+    message: "At Mahatma Gandhi Zilla Parishad High School, Ghantasala, we strongly believe that education plays a key role in shaping and transforming one's future. Our school is committed to supporting every student, nurturing their potential, and encouraging them to dream, learn, and grow. We take special pride in providing accessible secondary education for girl students, ensuring that every girl child has the opportunity to continue her studies in a safe and supportive environment. Our focus is on the holistic development of students academically, socially, emotionally, and morally so that they become confident, responsible, and empowered individuals ready to contribute to society.",
+  },
+
+  stats: [
+    { label: "Year Established", value: 1946, prefix: "Est. " },
+    { label: "SSC Pass Percentage", value: 85, suffix: "%" },
+    { label: "Students with 500+ Marks", value: 11, suffix: "+" },
+    { label: "First Class Students", value: 41, suffix: "+" },
+  ],
+
+  achievements: {
+    ssc: {
+      year: "2024-25",
+      passPercentage: 85,
+      topper: {
+        name: "D. Jayasindhu",
+        marks: 573,
+        total: 600
+      },
+      notableScorers: [
+        { name: "K. Charan Teja", marks: 567 },
+        { name: "K. Aravind", marks: 561 },
+        { name: "M. Gowri", marks: 550 }
+      ]
+    }
+  },
+
+  facilities: [
+    {
+      id: "pal-lab",
+      title: "PAL (Personalized Adaptive Learning) Lab",
+      description: "Dedicated lab furnished with 30 tablets and headphones, ensuring personalized and technology-enabled learning for every student.",
+      icon: "Laptop",
+    },
+    {
+      id: "science-lab",
+      title: "Modern Science & Chemistry Labs",
+      description: "Fully equipped Science, Physics, and Chemistry laboratories established to promote experiential and inquiry-based learning.",
+      icon: "FlaskConical",
+    },
+    {
+      id: "infrastructure",
+      title: "Enhanced Infrastructure",
+      description: "A new school building constructed with the generous support of Gorrepati Venkatarayalu Udaya Bhaskaramma Educational Trust.",
+      icon: "Building2",
+    },
+    {
+      id: "green-initiatives",
+      title: "Kitchen Garden & Playground",
+      description: "With PM SHRI grants, a spacious playground and kitchen garden have been developed to encourage physical fitness and environmental awareness.",
+      icon: "Leaf",
+    }
+  ],
+
+  events: [
+    {
+      id: "annual-day",
+      title: "80th Annual Day Celebrations",
+      date: "27th January, 2026",
+      description: "A grand celebration inaugurated by esteemed guests including SI Chandana Garu and Rtd MEO Gorrepati Ramakrishna Garu, highlighting holistic education.",
+      category: "Celebrations"
+    },
+    {
+      id: "ebsb",
+      title: "Ek Bharat Shreshtha Bharat (EBSB)",
+      description: "Students explored the rich culture of Punjab through basic language skills, poster-making competitions, and lively Punjabi dances to foster national integration.",
+      category: "Cultural"
+    },
+    {
+      id: "child-marriage",
+      title: "Child Marriage Free Awareness Campaign",
+      description: "A successful drive with rallies and poster campaigns to highlight the importance of ending child marriage.",
+      category: "Social Initiative"
+    },
+    {
+      id: "outreach",
+      title: "100 Days Action Plan Outreach",
+      description: "Headmistress and teachers visited homes of long-absent Class X students to encourage their return to school.",
+      category: "Social Initiative"
+    },
+    {
+      id: "festivals",
+      title: "Sankranti Celebrations",
+      description: "Promoting cultural diversity and unity, students participated in preparing traditional Pongal dishes and decorating the premises with colorful rangoli.",
+      category: "Cultural"
+    }
+  ]
+};

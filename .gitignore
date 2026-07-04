@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project specific ignores for unused/temp assets
+/public/media/
+/temp-pdf-images/
+/public/assets/optimized/annual_page_*.webp
+/public/assets/optimized/ebsb_page_*.webp
+/public/assets/optimized/pdf_page_02.webp
+/public/assets/optimized/pdf_page_05.webp
+/public/assets/optimized/pdf_page_06.webp
+/public/assets/optimized/pdf_page_07.webp
+/public/assets/optimized/pdf_page_09.webp
+/public/assets/optimized/pdf_page_10.webp
+/public/assets/optimized/WhatsApp Image 2026-07-04 at 10.12.40 AM.webp
+/public/assets/optimized/WhatsApp Image 2026-07-04 at 9.28.49 AM (1).webp
+/public/assets/optimized/IMG-20260704-WA0014.webp
+/public/icons.svg
+
+# Unused default/template src assets
+/src/assets/hero.png
+/src/assets/react.svg
+/src/assets/vite.svg
