@@ -34,8 +34,8 @@ const AboutSchool = () => {
         <motion.div initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-10">
           <div className="rounded-2xl overflow-hidden shadow-md border border-slate-100">
             <img 
-              src="/assets/optimized/pdf_page_01.webp" 
-              alt="MGZPHS School Building" 
+              src="/assets/optimized/school_entrance.webp" 
+              alt="MGZPHS School Entrance Gate" 
               className="w-full h-48 md:h-72 object-cover"
               loading="lazy"
             />
