@@ -242,7 +242,10 @@ function App() {
                 <img src="/assets/optimized/logo.png" alt="MGZPHS PLUS Ghantasala Footer Logo" className="w-8 h-8" />
                 <span className="text-white font-bold text-sm">MGZPHS PLUS Ghantasala</span>
               </div>
-              <p className="text-xs leading-relaxed">A PM SHRI Model School serving the community since {schoolData.established}.</p>
+              <p className="text-xs leading-relaxed mb-3">A PM SHRI Model School serving the community since {schoolData.established}.</p>
+              <a href={`mailto:${schoolData.email}`} className="text-xs text-slate-400 hover:text-yellow-400 transition-colors block">
+                📧 {schoolData.email}
+              </a>
             </div>
             <div>
               <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-3">Navigate</h4>

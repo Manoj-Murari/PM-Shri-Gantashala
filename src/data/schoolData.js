@@ -4,6 +4,7 @@ export const schoolData = {
   established: 1946,
   pmShriStatus: "June 2022",
   diseCode: "28163101013",
+  email: "zphsghantasala61@gmail.com",
   
   hero: {
     title: "Empowering Rural Education",

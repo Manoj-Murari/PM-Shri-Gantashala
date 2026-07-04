@@ -48,7 +48,7 @@ const AboutSchool = () => {
               ['DISE School Code', schoolData.diseCode],
               ['Affiliation Type', 'State Board of Andhra Pradesh (SSC)'],
               ['Location', schoolData.location],
-              ['Medium of Instruction', 'English & Telugu Medium Co-educational'],
+              ['Medium of Instruction', 'English Medium Co-educational'],
               ['PM SHRI Status', `Selected in ${schoolData.pmShriStatus}`],
             ].map(([label, value], i) => (
               <div key={i} className={`flex flex-col sm:flex-row sm:items-center px-5 py-4 ${i > 0 ? 'border-t border-slate-100' : ''} hover:bg-slate-50/50 transition-colors`}>
