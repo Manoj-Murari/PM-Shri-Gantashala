@@ -19,24 +19,23 @@ export const schoolData = {
 
   stats: [
     { label: "Year Established", value: 1946, prefix: "Est. " },
-    { label: "SSC Pass Percentage", value: 85, suffix: "%" },
+    { label: "SSC Pass Percentage", value: 78.6, suffix: "%" },
     { label: "Students with 500+ Marks", value: 11, suffix: "+" },
     { label: "First Class Students", value: 41, suffix: "+" },
   ],
 
   achievements: {
     ssc: {
-      year: "2024-25",
-      passPercentage: 85,
+      year: "2025-26",
+      passPercentage: 78.6,
       topper: {
-        name: "D. Jayasindhu",
-        marks: 573,
+        name: "Goli Mounika",
+        marks: 557,
         total: 600
       },
       notableScorers: [
-        { name: "K. Charan Teja", marks: 567 },
-        { name: "K. Aravind", marks: 561 },
-        { name: "M. Gowri", marks: 550 }
+        { name: "Merugu Harshitha", marks: 530 },
+        { name: "Podhili Pranitha", marks: 527 }
       ]
     }
   },

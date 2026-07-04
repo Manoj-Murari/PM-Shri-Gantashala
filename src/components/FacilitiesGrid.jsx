@@ -43,7 +43,7 @@ const FacilitiesGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            { src: '/assets/optimized/pdf_page_04.webp', badge: 'Personalized Adaptive Learning', title: 'PAL Computer Lab', desc: 'Equipped with tablets for self-paced learning.' },
+            { src: '/assets/optimized/pdf_page_04.webp', badge: 'Personalized Adaptive Learning', title: 'PAL Lab', desc: 'Equipped with tablets for self-paced learning.' },
             { src: '/assets/optimized/pdf_page_03.webp', badge: 'Science Department', title: 'Chemistry Laboratory', desc: 'Fully equipped for hands-on experiential learning.' },
           ].map((lab, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }}

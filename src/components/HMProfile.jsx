@@ -20,9 +20,11 @@ const HMProfile = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="card max-w-2xl mx-auto mb-10">
           <div className="bg-gradient-to-b from-school-light to-white p-8 flex flex-col items-center">
             <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-[5px] border-school-gold/70 overflow-hidden shadow-lg bg-slate-100 mb-5">
-              <div className="w-full h-full flex items-center justify-center text-slate-300">
-                <span className="text-xs text-center px-4 leading-tight font-medium">HM Portrait<br/>(Coming Soon)</span>
-              </div>
+              <img 
+                src="/assets/optimized/hm_profile.webp" 
+                alt={schoolData.headmistress.name} 
+                className="w-full h-full object-cover object-[center_35%]"
+              />
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-school-navy font-heading text-center">{schoolData.headmistress.name}</h3>
             <p className="text-school-amber font-bold text-xs uppercase tracking-[0.15em] mt-1.5">Headmistress / Principal</p>

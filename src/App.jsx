@@ -12,8 +12,7 @@ import './index.css';
 
 const TICKER_ITEMS = [
   '🎓 PM SHRI Model School of Excellence',
-  '📚 SSC 100% Pass Rate 2024',
-  '🖥️ PAL Computer Lab',
+  '🖥️ PAL Lab',
   '🔬 Science & Chemistry Labs',
   '🤝 NCC · Scouts & Guides',
   '🇮🇳 Ek Bharat Shreshtha Bharat',
@@ -112,13 +111,13 @@ function App() {
 
           {/* BG image */}
           <div className="absolute inset-0">
-            <img src="/assets/hero_bg.png" alt="" className="w-full h-full object-cover object-center" style={{ filter: 'brightness(0.32)' }} />
+            <img src="/assets/hero_bg.png" alt="MGZPHS Ghantasala School Campus" className="w-full h-full object-cover object-center" style={{ filter: 'brightness(0.45)' }} />
           </div>
 
-          {/* Gradient overlay — heavy left, fades right */}
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(110deg, rgba(15,23,42,0.98) 0%, rgba(15,23,42,0.88) 40%, rgba(15,23,42,0.50) 75%, rgba(15,23,42,0.2) 100%)' }} />
+          {/* Gradient overlay — lighter at top so building texture shows, denser left for text legibility */}
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(110deg, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.80) 40%, rgba(15,23,42,0.35) 75%, rgba(15,23,42,0.1) 100%)' }} />
           {/* Bottom fade */}
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.9) 0%, transparent 55%)' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, transparent 45%)' }} />
           {/* Subtle dot grid */}
           <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
@@ -130,15 +129,15 @@ function App() {
           </div>
 
           {/* ── HERO CONTENT ── */}
-          <div className="relative z-10 container-custom flex flex-col justify-center" style={{ minHeight: '100vh', paddingTop: '8rem', paddingBottom: '5rem' }}>
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+          <div className="relative z-10 container-custom flex flex-col justify-center pt-16 pb-16 md:pt-32 md:pb-20 min-h-screen">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-12 items-center">
 
               {/* LEFT: 3 cols text */}
               <div className="lg:col-span-3">
 
                 {/* Scheme badge */}
-                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} className="flex items-center gap-3 mb-7">
-                  <div className="rounded-full flex items-center justify-center shrink-0" style={{ width: '48px', height: '48px', border: '1.5px solid rgba(251,191,36,0.45)', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)', padding: '6px' }}>
+                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} className="flex items-center gap-3 mb-4">
+                  <div className="rounded-full flex items-center justify-center shrink-0" style={{ width: '44px', height: '44px', border: '1.5px solid rgba(251,191,36,0.45)', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)', padding: '5px' }}>
                     <img src="/assets/optimized/logo.png" alt="PM SHRI" className="w-full h-full object-contain" />
                   </div>
                   <div>
@@ -148,37 +147,37 @@ function App() {
                 </motion.div>
 
                 {/* Gold rule */}
-                <motion.div initial={{ scaleX: 0, opacity: 0 }} animate={{ scaleX: 1, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ height: '2px', width: '56px', background: 'linear-gradient(to right, #fbbf24, transparent)', marginBottom: '24px', transformOrigin: 'left' }} />
+                <motion.div initial={{ scaleX: 0, opacity: 0 }} animate={{ scaleX: 1, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ height: '2px', width: '56px', background: 'linear-gradient(to right, #fbbf24, transparent)', marginBottom: '16px', transformOrigin: 'left' }} />
 
                 {/* Title */}
                 <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.15 }}>
-                  <h1 className="font-heading font-black text-white" style={{ fontSize: 'clamp(1.85rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '0.15em' }}>
+                  <h1 className="font-heading font-black text-white" style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '0.1em' }}>
                     Mahatma Gandhi
                   </h1>
-                  <h1 className="font-heading font-black text-white" style={{ fontSize: 'clamp(1.85rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '0.15em' }}>
+                  <h1 className="font-heading font-black text-white" style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '0.1em' }}>
                     Zilla Parishad High School
                   </h1>
-                  <h1 className="font-heading font-black" style={{ fontSize: 'clamp(1.85rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '1.5rem', color: '#fbbf24' }}>
+                  <h1 className="font-heading font-black" style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3.5rem)', lineHeight: '1.1', marginBottom: '1rem', color: '#fbbf24' }}>
                     Ghantasala
                   </h1>
                 </motion.div>
 
                 {/* Subtitle */}
-                <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.25 }} style={{ color: 'rgba(203,213,225,0.9)', fontSize: '0.9375rem', lineHeight: '1.75', maxWidth: '480px', marginBottom: '2rem' }}>
+                <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.25 }} style={{ color: 'rgba(203,213,225,0.9)', fontSize: '0.875rem', lineHeight: '1.7', maxWidth: '480px', marginBottom: '1.5rem' }}>
                   Empowering rural education with modern infrastructure, technology-driven classrooms, and the National Education Policy — proudly serving the community since <strong style={{ color: 'white' }}>{schoolData.established}</strong>.
                 </motion.p>
 
                 {/* CTA Buttons */}
-                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.35 }} className="flex flex-wrap gap-3 mb-10">
+                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.35 }} className="flex flex-wrap gap-3 mb-6">
                   <a href="#about" className="btn-primary">Explore School</a>
-                  <a href="#gallery" className="btn-ghost">View Gallery</a>
+                  <a href="#gallery" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.5rem', background: 'transparent', color: 'white', border: '1.5px solid rgba(255,255,255,0.55)', borderRadius: '0.75rem', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.025em', transition: 'all 0.3s', backdropFilter: 'blur(4px)' }}>View Gallery</a>
                 </motion.div>
 
                 {/* Stats Grid */}
-                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.45 }} className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.45 }} className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {schoolData.stats.map((stat, i) => (
-                    <div key={i} className="rounded-xl text-center" style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.13)', padding: '16px 8px' }}>
-                      <div className="font-heading font-black leading-none mb-1.5" style={{ fontSize: '1.8rem', color: '#fbbf24' }}>
+                    <div key={i} className="rounded-xl text-center" style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.13)', padding: '12px 8px' }}>
+                      <div className="font-heading font-black leading-none mb-1" style={{ fontSize: '1.6rem', color: '#fbbf24' }}>
                         {stat.prefix || ''}{stat.value}{stat.suffix || ''}
                       </div>
                       <div style={{ color: 'rgba(148,163,184,0.9)', fontSize: '9px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', lineHeight: '1.3' }}>
@@ -240,7 +239,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <img src="/assets/optimized/logo.png" alt="" className="w-8 h-8" />
+                <img src="/assets/optimized/logo.png" alt="MGZPHS Ghantasala Footer Logo" className="w-8 h-8" />
                 <span className="text-white font-bold text-sm">MGZPHS Ghantasala</span>
               </div>
               <p className="text-xs leading-relaxed">A PM SHRI Model School serving the community since {schoolData.established}.</p>
@@ -265,8 +264,9 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="pt-6 border-t border-slate-800 text-center" style={{ fontSize: '10px', color: '#64748b' }}>
-            © {new Date().getFullYear()} {schoolData.name}. DISE: {schoolData.diseCode}
+          <div className="pt-6 border-t border-slate-800 text-center pr-14 sm:pr-0" style={{ fontSize: '10px', color: '#64748b' }}>
+            <span className="block sm:inline">© {new Date().getFullYear()} {schoolData.name}.</span>
+            <span className="block sm:inline sm:ml-1">DISE: {schoolData.diseCode}</span>
           </div>
         </div>
       </footer>
