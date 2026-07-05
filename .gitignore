@@ -26,8 +26,6 @@ dist-ssr
 # Project specific ignores for unused/temp assets
 /public/media/
 /temp-pdf-images/
-/public/assets/optimized/annual_page_*.webp
-/public/assets/optimized/ebsb_page_*.webp
 /public/assets/optimized/pdf_page_02.webp
 /public/assets/optimized/pdf_page_05.webp
 /public/assets/optimized/pdf_page_06.webp
